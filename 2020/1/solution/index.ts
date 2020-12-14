@@ -1,7 +1,7 @@
 import { FileReader } from './FileReader';
-import { findSum } from './findSum';
+import { findSum, findThreeSum } from './findSum';
 
 const fileReader = new FileReader('../input/input.txt');
 fileReader.read();
 
-findSum(fileReader.data, 2020);
+findThreeSum(fileReader.data, 2020);
