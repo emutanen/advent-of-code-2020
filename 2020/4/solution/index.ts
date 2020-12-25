@@ -13,4 +13,4 @@ passportFileReader.read();
 const validator = new Validator<PassportData>(passportFileReader.items, validatePassport);
 validator.validate();
 
-console.log(`Valid number of passports in Solution 4-1 is ${validator.validItemsAmount}`);
+console.log(`Valid number of passports in Solution 4-2 is ${validator.validItemsAmount}`);
