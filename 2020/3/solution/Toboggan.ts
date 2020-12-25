@@ -3,7 +3,7 @@ interface TobogganPosition {
   col: number;
 }
 
-interface TobogganSpeedProfile {
+export interface TobogganSpeedProfile {
   horizontalSpeed: number;
   verticalSpeed: number;
 }
