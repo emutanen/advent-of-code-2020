@@ -30,11 +30,11 @@ export class BoardingPass {
     this.column = binarySearch(cols, dirArrayCols, 0) + ZERO_BASED_INDEX_OFFSET; // Returns 1-based number, but the assignemnt is using 0-based row number 
   }
 
-  get seatRow(): number { // Returns seat row number
+  get seatRow(): number {
     return this.row;
   }
 
-  get seatColumn(): number { // Returns seat column number
+  get seatColumn(): number {
     return this.column;
   }
   

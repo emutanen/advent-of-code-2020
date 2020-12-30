@@ -14,7 +14,7 @@ boardingPassFileReader.read();
 // Create array of rows and cols to pass to boarding pass
 const numberOfRows = 128; 
 const cols = [1, 2, 3, 4, 5, 6, 7, 8];
-let rows = Array(numberOfRows);
+const rows = Array(numberOfRows);
 let i = 0;
 while(i < numberOfRows) rows[i++] = i;
 
