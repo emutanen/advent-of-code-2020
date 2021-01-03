@@ -32,7 +32,6 @@ export const countGroupCommonAnswers = (groupsData: CustomsFormData[]): number =
       let reducedRemainingAfter: string[] = []; // final state after filtering
 
       for(let personYesAns of personYesAnsws) { // loop through all persons answers
-        if(reducedRemainingBefore.length === 0) break;
 
           for(let answer of personYesAns) { // loop through single answers of single person
             if(reducedRemainingBefore.includes(answer)) {
