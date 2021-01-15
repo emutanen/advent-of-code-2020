@@ -1,7 +1,7 @@
 import { FileReader } from './FileReader';
 import { HaversackRule } from './HaversackRule';
 import { dataMapMethod } from './HaversackDataMapping';
-import { Counter } from './SlotCounter';
+import { Counter } from './Counter';
 
 console.log('Handy haversacks starting...');
 
