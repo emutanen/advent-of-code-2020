@@ -27,6 +27,19 @@ export class Counter {
     return ans;
   }
 
+  childBagsCount = (rule: HaversackRule): number => {
+    if(rule.containsNoOtherBags) {
+      return 1;
+    } else {
+      let childCount = 0;
+      rule.slots.forEach((value, key) => {
+        const childRule = this.findHaversackRule(key);
+        childCount += (value * (this.childBagsCount(childRule)));
+      });
+      return childCount + 1; // bag adds finally itself to the child count
+    }
+  }
+
   count = () => {
     let totalCount = 0;
   
@@ -36,6 +49,11 @@ export class Counter {
         }
       }
       return totalCount;
+  }
+
+  countContainingBags = () => {
+    const targetBagRule = this.findHaversackRule(this.targetColor);
+    return this.childBagsCount(targetBagRule) - 1; // due to recursive nature of childBagsCount the outermost bag counts itself as a child, so removing it from count
   }
 
 }

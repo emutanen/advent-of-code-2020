@@ -1,7 +1,7 @@
 import { dataMapMethod } from '../solution/HaversackDataMapping';
-import { Counter } from '../solution/SlotCounter';
+import { Counter } from '../solution/Counter';
 
-const sampleInput = ['light red bags contain 1 bright white bag, 2 muted yellow bags.',
+export const sampleInput = ['light red bags contain 1 bright white bag, 2 muted yellow bags.',
                   'dark orange bags contain 3 bright white bags, 4 muted yellow bags.',
                   'bright white bags contain 1 shiny gold bag.',
                   'muted yellow bags contain 2 shiny gold bags, 9 faded blue bags.',
